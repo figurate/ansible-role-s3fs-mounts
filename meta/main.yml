@@ -1,4 +1,4 @@
-# @meta name: S3FS-Mounts
+# @meta role_name: S3FS-Mounts
 # @meta author: Ben Fortuna
 # @meta description: Mount AWS S3 buckets with s3fs-fuse
 # @meta license: MIT

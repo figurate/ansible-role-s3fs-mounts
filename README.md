@@ -1,4 +1,5 @@
-# Ansible Role: work
+# Ansible Role: S3FS-Mounts
+
 
 Mount aws s3 buckets with s3fs-fuse 
 ![s3fs mounts](s3fs_mounts.png)
