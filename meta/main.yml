@@ -1,0 +1,15 @@
+# @meta name: S3FS-Mounts
+# @meta author: Ben Fortuna
+# @meta description: Mount AWS S3 buckets with s3fs-fuse
+# @meta license: MIT
+# @tag s3 # AWS S3 Bucket
+# @tag s3fs-fuse # S3FS
+# @tag fuse # FUSE
+galaxy_info:
+  author: Ben Fortuna
+  description: Mount AWS S3 buckets with s3fs-fuse
+  license: MIT
+  platforms:
+    - name: Amazon Linux 2
+  galaxy_tags: ["s3", "s3fs-fuse", "fuse"]
+  categories: system

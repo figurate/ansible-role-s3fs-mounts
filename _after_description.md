@@ -1,0 +1,1 @@
+![s3fs mounts](s3fs_mounts.png)

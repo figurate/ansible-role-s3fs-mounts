@@ -1,0 +1,18 @@
+- name: Install s3fs-fuse (Amazon Linux)
+  import_tasks: al2.yml
+  when: ansible_distribution == 'Amazon'
+
+- name: Create mount targets
+  file:
+    path: {{item.path}}
+    state: directory
+  with_items: {{s3fs_mounts}}
+
+- name: Mount S3 buckets
+  ansible.posix.mount:
+    path: {{item.path}}
+    src: {{item.bucket}}
+    fstype: fuse.s3fs
+    opts: _netdev,allow_other,iam_role=auto
+    state: present
+  with_items: {{s3fs_mounts}}
